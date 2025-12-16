@@ -102,5 +102,4 @@ LaTeX reports covering theory and mathematics behind Multilayer Perceptrons.
 - Softmax and numerical stability
 
 ---
-Chourasia**  
-Computer Science Engineering
+

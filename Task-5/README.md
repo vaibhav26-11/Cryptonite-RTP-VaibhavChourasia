@@ -73,12 +73,15 @@ Next-character prediction and dialogue generation from script text.
 
 A custom generation function was implemented:
 ```python
-generate_script(
-    seed_text="Michael: Okay everyone, listen up. ",
-    temperature=0.7,
-    num_tokens=300
+best_seed = "Michael: Okay everyone, listen up. "
+best_temperature = 0.7
+best_sample = generate_script(
+    best_seed,
+    temperature=best_temperature,
+    num_chars=500
 )
 ```
+
 
 ---
 
@@ -103,4 +106,5 @@ generate_script(
 - Proper windowing, scaling, and feature selection are crucial for stable time-series forecasting.
 - The character-level LSTM successfully learns statistical patterns in dialogue text and generates structured script-like output.
 - Temperature-based sampling effectively controls the trade-off between coherence and creativity in generated text.
+
 
